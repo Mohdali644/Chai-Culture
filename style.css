@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F5EFE6;
+  color: #3E2723;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+  max-width: 420px;
+  width: 100%;
+}
+
+/* Logo */
+.logo img {
+  width: 140px;
+  margin-bottom: 1.5rem;
+}
+
+/* Heading */
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  background-color: #C9A14A;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Description */
+.description {
+  font-size: 0.95rem;
+  color: #5D4037;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Launching Soon */
+.launching {
+  margin-bottom: 1.5rem;
+}
+
+.launching span {
+  background-color: #C9A14A;
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  animation: pulse 2s infinite;
+}
+
+/* Email Signup */
+.signup {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.signup input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #D7CCC8;
+  border-radius: 4px;
+  outline: none;
+}
+
+.signup button {
+  background-color: #3E2723;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.signup button:hover {
+  background-color: #5D4037;
+}
+
+/* Social Icons */
+.socials a {
+  color: #3E2723;
+  margin: 0 8px;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.socials a:hover {
+  color: #C9A14A;
+}
+
+/* Animation */
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .signup {
+    flex-direction: column;
+  }
+
+  .signup button {
+    width: 100%;
+  }
+}
+.text-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3E2723;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+
+.text-logo::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #C9A14A;
+  margin: 8px auto 0;
+}
